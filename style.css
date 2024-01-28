@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+:root{
+    --font:'Poppins', sans-serif;
+    --DarkBlue: hsl(249, 10%, 26%); 
+    --GrayishBlue: hsl(246, 25%, 77%);
+    --Blue: hsl(248, 32%, 49%);
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+html{
+    min-height: 100vh;
+    width: 100%;
+    background:url(./images/bg-intro-desktop.png) no-repeat  var(--Red);
+    background-size: 100%;
+    padding:0 10rem;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.rightDiv{
+    width: 60%;
+    padding: 0 5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.leftDiv{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    color:white;
+    font-size: 2.5rem;
+    line-height: 45px;
+    padding-right: 5rem;
+    margin-bottom: 1rem;
+}
+.desc{
+    color: rgba(237, 236, 236, 0.957);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.rightDivNav{
+    width: 85%;
+    background-color: var(--Blue);
+    color: var(--GrayishBlue);
+    font-weight: 600;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.Navspan{
+    color: white;
+}
+.formDiv{
+    width: 85%;
+    background-color: white;
+    padding: 2rem ;
+    border-radius: 5px;
+}
+form{
+    width: 100%;
+}
+input{
+    width: 100%;
+    /* margin-bottom: 1rem; */
+    padding: 10px 10px 10px 1.3rem;
+    border-radius: 5px;
+    border: 2px solid rgba(121, 119, 119, 0.299);
+    outline: none;
+    font-weight: 600;
+    transition: 0.5s;
+}
+input::placeholder{
+    font-weight:600 ;
+}
+input:focus{
+    border:2px solid var(--Blue);
+}
+.btn{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 12px;
+    background-color: var(--Green);
+    box-shadow: 0 3px 2px  hsl(154, 59%, 39%)  ;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    word-spacing: 2px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:hsla(154, 63%, 46%, 0.63);
+}
+.terms{
+    width: 100%;
+    font-size: 0.7rem;
+    text-align: center;
+    color: var(--GrayishBlue);
+    font-weight: 600;
+}
+.termsspan{
+    color: var(--Red);
+}
+.inputClass{
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.error{
+    position: absolute;
+    left: 90%;
+    top: 17%;
+    width: 20px;
+    display: none;
+}
+.errorInput{
+    border: 2px solid var(--Red);
+}
+.errorInput::placeholder{
+    visibility: hidden;
+}
+.correctInput{
+    border: 2px solid var(--Green);
+}
+.errorFName,.errorLName,.errorEmail,.errorPass{
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--Red);
+    text-align: end;
+    margin-top: 0.2rem;
+    display: none;
+}
+
+@media screen and (max-width:430px) and (min-width:300px) {
+    html{
+        min-height: 100vh;
+        width: 100%;
+        background:url(./images/bg-intro-mobile.png) repeat  var(--Red);
+        background-size: 100%;
+        padding:5rem 1rem;
+    }
+    body{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    .rightDiv{
+        width: 100%;
+        padding: 0 0rem 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .leftDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        color:white;
+        font-size: 1.8rem;
+        line-height: 35px;
+        padding-right: 0rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .desc{
+        color: rgba(237, 236, 236, 0.957);
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: center;
+    }   
+    .rightDivNav{
+        width: 100%;
+        background-color: var(--Blue);
+        color: var(--GrayishBlue);
+        font-weight: 600;
+        padding: 8px 5rem;
+        font-size: 0.9rem;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        box-shadow: 0 5px  rgba(95, 94, 94, 0.26);
+    }
+    .formDiv{
+        width: 100%;
+        background-color: white;
+        padding: 2rem 1rem ;
+        border-radius: 10px;
+        box-shadow: 0 6px  rgba(95, 94, 94, 0.26);
+    }
+    form{
+        width: 100%;
+    }
+}
+@media screen and (max-width:900px) and (min-width:431px) {
+    html{
+        min-height: 100vh;
+        width: 100%;
+        background:url(./images/bg-intro-desktop.png) repeat  var(--Red);
+        background-size: 100%;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        padding:5rem 1rem;
+    }
+    body{
+        min-height: 100vh;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    .rightDiv{
+        width: 100%;
+        padding: 0 0rem 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .leftDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        color:white;
+        font-size: 1.8rem;
+        line-height: 35px;
+        padding-right: 0rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .desc{
+        color: rgba(237, 236, 236, 0.957);
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: center;
+    }   
+    .rightDivNav{
+        width: 100%;
+        background-color: var(--Blue);
+        color: var(--GrayishBlue);
+        font-weight: 600;
+        padding: 8px 5rem;
+        font-size: 0.9rem;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        box-shadow: 0 5px  rgba(95, 94, 94, 0.26);
+    }
+    .formDiv{
+        width: 100%;
+        background-color: white;
+        padding: 2rem 1rem ;
+        border-radius: 10px;
+        box-shadow: 0 6px  rgba(95, 94, 94, 0.26);
+    }
+    form{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1300px) and (min-width:901px) {
+    html{
+        min-height: 100vh;
+        width: 100%;
+        background:url(./images/bg-intro-desktop.png) no-repeat  var(--Red);
+        background-size: 100%;
+        padding:0 5rem;
+    }
+    body{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    .rightDiv{
+        width: 60%;
+        padding: 0 0rem 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .leftDiv{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

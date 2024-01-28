@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./main.js"></script>
+</head>
+<body>
+  <div class="leftDiv">
+    <h1 class="title">Learn to code by watching others</h1>
+    <p class="desc">See how experienced developers solve problems in real-time. Watching scripted tutorials is great,but understanding how developers think is invaluable.</p>
+  </div>
+  <div class="rightDiv">
+    <div class="rightDivNav">
+      <p class="navText"><span class="Navspan">Try it free 7 days</span> then $20/mo. thereafter</p>
+    </div>
+    <div class="formDiv">
+      <form action="">
+        <div class="FIrstNameDiv">
+          <div class="inputClass">
+            <img src="./images/icon-error.svg" alt="icon-error" class="error" id="error1">
+            <input type="text" placeholder="First Name" class="FirstName" id="FirstName" autofocus>
+            <p class="errorFName" id="errorFName">First Name Cannot be empty</p>
+          </div>
+          
+        </div>
+        <div class="lastNameDiv">
+          <div class="inputClass">
+            <img src="./images/icon-error.svg" alt="icon-error" class="error" id="error2">
+            <input type="text" placeholder="Last Name"
+          class="LastName" id="LastName">
+          <p class="errorLName" id="errorLName">Last Name Cannot be empty</p>
+          </div>
+        </div>
+        <div class="emailDiv">
+          <div class="inputClass">
+            <img src="./images/icon-error.svg" alt="icon-error" class="error" id="error3">
+            <input type="email" pattern=".+@example\.com"  placeholder="Email Address"
+            class="email" id="email">
+            <p class="errorEmail" id="errorEmail">Looks like this is not a email</p>
+          </div>
+
+        </div>
+        <div class="passwordDiv">
+          <div class="inputClass">
+            <img src="./images/icon-error.svg" alt="icon-error" class="error" id="error4">
+          <input type="password" placeholder="Password"
+          class="Password" id="Password">
+          <p class="errorPass" id="errorPass">Password cannot be empty</p>
+          </div>
+        </div>
+        <button class="btn" id="btn">CLAIM YOUR FREE TRIAL</button>
+      </form>
+      <p class="terms">
+        By clicking the button, you are agreeing to our <span class="termsspan">Terms and Services</span>
+      </p>
+    </div>
+  </div>
+
+<!-- 
+  Learn to code by watching others
+
+  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. 
+
+  Try it free 7 days then $20/mo. thereafter
+
+  First Name 
+  Last Name 
+  Email Address
+  Password
+
+  Claim your free trial 
+
+  By clicking the button, you are agreeing to our Terms and Services
+   -->
+
+</body>
+</html>
